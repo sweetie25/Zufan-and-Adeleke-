@@ -27,3 +27,24 @@ function breakingRecords(scores) {
         }
     }
     return[max, min]
+    
+    /* This is the Cats and a mouse function
+     * The function is expected to return a string 
+     * The function accepts integers as parameters
+     */
+    
+    function catAndMouse(x, y, z) {
+    let distOfCatAToMouse = Math.abs(z - x)
+    let distOfCatBToMouse = Math.abs(z - y)
+    
+    if(distOfCatAToMouse > distOfCatBToMouse){
+        return ('Cat B')
+    }
+    else if(distOfCatBToMouse > distOfCatAToMouse){
+        return ('Cat A')
+    }
+    else {
+        return ('Mouse C')
+    }
+
+}
